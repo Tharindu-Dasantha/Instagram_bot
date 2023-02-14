@@ -11,7 +11,7 @@ hashtag = input('Hashtag: ')
 if not hashtag:
     hashtags = ["programming", "trending", "hot", "development", "production", "finance"]
     hashtag = random.choice(hashtags)
-comments = ["Awsome","Great", "Nice"]
+comments = ["Awsome","Great", "Nice", "Wonderful", "Amazing", "Lovely", "😎", "🥳", "😶‍🌫️", "🥹", "😁", "😍", "🥰", "😘", "🥸", "🙃", "Great", "😽", "🙀", "❤️", "💞"]
 
 medias = client.hashtag_medias_recent(hashtag, 20)
 
