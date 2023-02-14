@@ -9,12 +9,12 @@ pg.leftClick(1051, 1058, 1, 2)
 
 # Clicking on the commit massege
 time.sleep(1)
-pg.leftClick(105, 745, 1, 2)
+pg.leftClick(193, 798, 1, 2)
 pg.write("commit")
 time.sleep(1)
 
 # Clicking on the commi button
-pg.leftClick(198, 931, 1, 2)
+pg.leftClick(174, 990, 1, 2)
 time.sleep(1)
 
 # Clicking on push origin
