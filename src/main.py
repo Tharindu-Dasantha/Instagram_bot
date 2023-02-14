@@ -7,7 +7,10 @@ password = input('Password: ')
 client = Client()
 client.login(username, password)
 
-hashtag = "programing"
+hashtag = input('Hashtag: ')
+if not hashtag:
+    hashtags = ["programming", "trending", "hot", "development", "production", "finance"]
+    hashtag = random.choice(hashtags)
 comments = ["Awsome","Great", "Nice"]
 
 medias = client.hashtag_medias_recent(hashtag, 20)
