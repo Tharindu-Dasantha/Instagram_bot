@@ -5,7 +5,7 @@ What is this:
 How to start: 
     clone the code into a codespace and run the code using a terminal window.
     how to do it in git-bash:
-        type python main.py
+        type python main.py  
         then enter the username and password when prompted (this does not keep a data base or save your password so you need to enter the password everytime for safty reasons)
         then if you have a hashtag that you need to enter type it out else a random hashtag will be used.
     
