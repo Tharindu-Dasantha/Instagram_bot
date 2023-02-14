@@ -1,0 +1,5 @@
+What this bot do : 
+    upload img in a given time zone or a time
+ 
+psudo: 
+    
