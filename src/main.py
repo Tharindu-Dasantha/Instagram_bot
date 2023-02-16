@@ -71,12 +71,6 @@ for user in usernames:
     medias = client.hashtag_medias_recent(hashtag, 2) # change this later too
 
     for i, media in enumerate(medias):
-        # liking the post
-        client.media_like(media.id)
-        print(f"Liked post number {i + 1} of hashing {hashtag}")
-        # following the post
-        client.user_follow(media.user.pk)
-        print(f"Followed user {media.user.username}")
         # commenting the post
         comment = random.choice(comments)
         client.media_comment(media.id, comment)
