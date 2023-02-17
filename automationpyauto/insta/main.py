@@ -23,7 +23,7 @@ pg.leftClick(351, 66, 1, 2)
 # typing the address
 pg.write("https://www.instagram.com/")
 pg.press("enter")
-time.sleep(1)
+time.sleep(5)
 
 # clicking on the username bar
 pg.leftClick(1153, 338, 1, 2)
