@@ -1,8 +1,7 @@
 from instagrapi import Client
 import random
 import sys
-import datetime
-
+import time
 
 def main():
     
@@ -13,13 +12,12 @@ def main():
          
 def bot():
     accounts = {}
-    # getting the number of users
-    
-    for _ in range(3): # change here for user_amount
-        # add users to a dictionary
-        user_name = input('Username: ')
-        pw = input('Password: ')
-        accounts[user_name] = pw
+    with open("info.txt", "r") as f:
+        for line in f:
+            username, password = line.split(",")
+            password = password.strip()
+            username = username.strip()
+            accounts[username] = password
 
     # making hashtags
     try:
@@ -72,7 +70,7 @@ def bot():
 
         hashtag = random.choice(hashtags)
 
-        medias = client.hashtag_medias_recent(hashtag, 2) # change this later too
+        medias = client.hashtag_medias_recent(hashtag, com_num) # change this later too
 
         for i, media in enumerate(medias):
             # commenting the post
@@ -82,6 +80,7 @@ def bot():
         
         # logout from the user
         client.logout()
+        time.sleep(60)
         
 if __name__ == "__main__":
     main()
